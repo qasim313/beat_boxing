@@ -38,7 +38,7 @@
 
             <Button
                 android:id="@+id/sound1"
-                android:onClick="beats"
+                android:onClick="songs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@mipmap/play"
@@ -47,7 +47,7 @@
 
             <Button
                 android:id="@+id/sound2"
-                android:onClick="beats"
+                android:onClick="songs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@mipmap/play"
@@ -56,7 +56,7 @@
 
             <Button
                 android:id="@+id/sound3"
-                android:onClick="beats"
+                android:onClick="songs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@mipmap/play"
@@ -65,7 +65,7 @@
 
             <Button
                 android:id="@+id/sounnd4"
-                android:onClick="beats"
+                android:onClick="songs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@mipmap/play"
@@ -74,7 +74,7 @@
 
             <Button
                 android:id="@+id/sound5"
-                android:onClick="beats"
+                android:onClick="songs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@mipmap/play"
@@ -83,7 +83,7 @@
 
             <Button
                 android:id="@+id/sound6"
-                android:onClick="beats"
+                android:onClick="songs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@mipmap/play"
@@ -92,7 +92,7 @@
 
             <Button
                 android:id="@+id/sound7"
-                android:onClick="beats"
+                android:onClick="songs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@mipmap/play"
@@ -101,7 +101,7 @@
 
             <Button
                 android:id="@+id/sound8"
-                android:onClick="beats"
+                android:onClick="songs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@mipmap/play"
@@ -218,6 +218,7 @@
 
         <Button
             android:id="@+id/btn_beat_1"
+            android:onClick="beats"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toTopOf="@+id/guideline9"
@@ -226,6 +227,7 @@
             app:layout_constraintTop_toTopOf="@+id/guideline8" />
         <Button
             android:id="@+id/btn_beat_2"
+            android:onClick="beats"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toTopOf="@+id/guideline9"
@@ -234,6 +236,7 @@
             app:layout_constraintTop_toTopOf="@+id/guideline8" />
         <Button
             android:id="@+id/btn_beat_3"
+            android:onClick="beats"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toTopOf="@+id/guideline9"
@@ -242,6 +245,7 @@
             app:layout_constraintTop_toTopOf="@+id/guideline8" />
         <Button
             android:id="@+id/btn_beat_4"
+            android:onClick="beats"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toTopOf="@+id/guideline9"
@@ -255,6 +259,7 @@
 
         <Button
             android:id="@+id/btn_beat_5"
+            android:onClick="beats"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toTopOf="@+id/guideline10"
@@ -263,6 +268,7 @@
             app:layout_constraintTop_toTopOf="@+id/guideline9" />
         <Button
             android:id="@+id/btn_beat_6"
+            android:onClick="beats"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toTopOf="@+id/guideline10"
@@ -271,6 +277,7 @@
             app:layout_constraintTop_toTopOf="@+id/guideline9" />
         <Button
             android:id="@+id/btn_beat_7"
+            android:onClick="beats"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toTopOf="@+id/guideline10"
@@ -279,6 +286,7 @@
             app:layout_constraintTop_toTopOf="@+id/guideline9" />
         <Button
             android:id="@+id/btn_beat_8"
+            android:onClick="beats"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toTopOf="@+id/guideline10"
@@ -292,6 +300,7 @@
 
         <Button
             android:id="@+id/btn_beat_9"
+            android:onClick="beats"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toTopOf="@+id/guideline11"
@@ -301,6 +310,7 @@
 
         <Button
             android:id="@+id/btn_beat_10"
+            android:onClick="beats"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toTopOf="@+id/guideline11"
@@ -310,6 +320,7 @@
 
         <Button
             android:id="@+id/btn_beat_11"
+            android:onClick="beats"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toTopOf="@+id/guideline11"
@@ -319,6 +330,7 @@
 
         <Button
             android:id="@+id/btn_beat_12"
+            android:onClick="beats"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toTopOf="@+id/guideline11"
@@ -332,6 +344,7 @@
 
         <Button
             android:id="@+id/btn_beat_13"
+            android:onClick="beats"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toTopOf="@+id/guideline12"
@@ -340,6 +353,7 @@
             app:layout_constraintTop_toTopOf="@+id/guideline11" />
         <Button
             android:id="@+id/btn_beat_14"
+            android:onClick="beats"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toTopOf="@+id/guideline12"
@@ -348,6 +362,7 @@
             app:layout_constraintTop_toTopOf="@+id/guideline11" />
         <Button
             android:id="@+id/btn_beat_15"
+            android:onClick="beats"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toTopOf="@+id/guideline12"
@@ -356,6 +371,7 @@
             app:layout_constraintTop_toTopOf="@+id/guideline11" />
         <Button
             android:id="@+id/btn_beat_16"
+            android:onClick="beats"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toTopOf="@+id/guideline12"

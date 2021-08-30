@@ -14,9 +14,9 @@ public class MainActivity extends AppCompatActivity {
     Button beat1,beat2,beat3,beat4,beat5,beat6,beat7,beat8,beat9,beat10,beat11,beat12,beat13,beat14,beat15,beat16;
 
     int flag = 1 ;
-    MediaPlayer mp ;
-    MediaPlayer currentPlaying, nextPlay ;
-    int a,previousSong;
+    MediaPlayer mp,mp1 ;
+    MediaPlayer currentPlaying ;
+    int a,b,previousSong;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void beats(View view){
+    public void songs(View view){
         a = view.getId();
 
 
@@ -87,6 +87,74 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Something went wrong!" , Toast.LENGTH_SHORT ).show();
         }
 
+    }
+    public void beats (View view){
+
+        b = view.getId() ;
+        if (b==R.id.btn_beat_1){
+            mp1 = MediaPlayer.create(this,R.raw.beat1);
+            mp1.start();
+        }
+        if (b==R.id.btn_beat_2){
+            mp1 = MediaPlayer.create(this,R.raw.beat2);
+            mp1.start();
+        }
+        if (b==R.id.btn_beat_3){
+            mp1 = MediaPlayer.create(this,R.raw.beat3);
+            mp1.start();
+        }
+        if (b==R.id.btn_beat_4){
+            mp1 = MediaPlayer.create(this,R.raw.beat4);
+            mp1.start();
+        }
+        if (b==R.id.btn_beat_5){
+            mp1 = MediaPlayer.create(this,R.raw.beat5);
+            mp1.start();
+        }
+        if (b==R.id.btn_beat_6){
+            mp1 = MediaPlayer.create(this,R.raw.beat6);
+            mp1.start();
+        }
+        if (b==R.id.btn_beat_7){
+            mp1 = MediaPlayer.create(this,R.raw.beat7);
+            mp1.start();
+        }
+        if (b==R.id.btn_beat_8){
+            mp1 = MediaPlayer.create(this,R.raw.beat8);
+            mp1.start();
+        }
+        if (b==R.id.btn_beat_9){
+            mp1 = MediaPlayer.create(this,R.raw.beat9);
+            mp1.start();
+        }
+        if (b==R.id.btn_beat_10){
+            mp1 = MediaPlayer.create(this,R.raw.beat10);
+            mp1.start();
+        }
+        if (b==R.id.btn_beat_11){
+            mp1 = MediaPlayer.create(this,R.raw.beat11);
+            mp1.start();
+        }
+        if (b==R.id.btn_beat_12){
+            mp1 = MediaPlayer.create(this,R.raw.beat12);
+            mp1.start();
+        }
+        if (b==R.id.btn_beat_13){
+            mp1 = MediaPlayer.create(this,R.raw.beat13);
+            mp1.start();
+        }
+        if (b==R.id.btn_beat_14){
+            mp1 = MediaPlayer.create(this,R.raw.beat14);
+            mp1.start();
+        }
+        if (b==R.id.btn_beat_15){
+            mp1 = MediaPlayer.create(this,R.raw.beat15);
+            mp1.start();
+        }
+        if (b==R.id.btn_beat_16){
+            mp1 = MediaPlayer.create(this,R.raw.beat16);
+            mp1.start();
+        }
     }
 
 
