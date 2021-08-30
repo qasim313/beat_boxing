@@ -7,101 +7,87 @@ import android.os.Bundle;
 import android.view.View;
 import android.media.MediaPlayer;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    Button sound1,sound2,sound3,sound4,sound5,sound6,sound7,sound8;
+
+    Button beat1,beat2,beat3,beat4,beat5,beat6,beat7,beat8,beat9,beat10,beat11,beat12,beat13,beat14,beat15,beat16;
+
+    int flag = 1 ;
+    MediaPlayer mp ;
+    MediaPlayer currentPlaying, nextPlay ;
+    int a,previousSong;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//
-//        sound1 = sound1.findViewById(R.id.sound1);
-//        sound1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent =
-//            }
-//        });
 
-         sound1 = (Button) this.findViewById(R.id.sound1);
-        final MediaPlayer mp = MediaPlayer.create(this, R.raw.the_nights);
-        sound1.setOnClickListener(new View.OnClickListener(){
 
-            public void onClick(View v) {
-                if (mp.isPlaying()){
-                    mp.pause();
-                } else {mp.start();}
-            }
-        });
-        sound2 = (Button) this.findViewById(R.id.sound2);
-        final MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.lily);
-        sound2.setOnClickListener(new View.OnClickListener(){
-
-            public void onClick(View v) {
-                if (mediaPlayer.isPlaying()){
-                    mediaPlayer.pause();
-                } else {mediaPlayer.start();}
-            }
-        });
-        sound3 = (Button) this.findViewById(R.id.sound3);
-        final MediaPlayer mp1 = MediaPlayer.create(this, R.raw.alone);
-        sound3.setOnClickListener(new View.OnClickListener(){
-
-            public void onClick(View v) {
-                if (mp1.isPlaying()){
-                    mp1.pause();
-                } else {mp1.start();}
-            }
-        });
-        sound4 = (Button) this.findViewById(R.id.sounnd4);
-        final MediaPlayer mp2 = MediaPlayer.create(this, R.raw.friends);
-        sound4.setOnClickListener(new View.OnClickListener(){
-
-            public void onClick(View v) {
-                if (mp2.isPlaying()){
-                    mp2.pause();
-                } else {mp2.start();}
-            }
-        });
-        sound5 = (Button) this.findViewById(R.id.sound5);
-        final MediaPlayer mp3 = MediaPlayer.create(this, R.raw.on_my_way);
-        sound5.setOnClickListener(new View.OnClickListener(){
-
-            public void onClick(View v) {
-                if (mp3.isPlaying()){
-                    mp3.pause();
-                } else {mp3.start();}
-            }
-        });
-        sound6 = (Button) this.findViewById(R.id.sound6);
-        final MediaPlayer mp4 = MediaPlayer.create(this, R.raw.safari);
-        sound6.setOnClickListener(new View.OnClickListener(){
-
-            public void onClick(View v) {
-                if (mp4.isPlaying()){
-                    mp4.pause();
-                } else {mp4.start();}
-            }
-        });
-        sound7 = (Button) this.findViewById(R.id.sound7);
-        final MediaPlayer mp5 = MediaPlayer.create(this, R.raw.senorita);
-        sound7.setOnClickListener(new View.OnClickListener(){
-
-            public void onClick(View v) {
-                if (mp5.isPlaying()){
-                    mp5.pause();
-                } else {mp5.start();}
-            }
-        });
-        sound8 = (Button) this.findViewById(R.id.sound8);
-        final MediaPlayer mp6 = MediaPlayer.create(this, R.raw.shape_of_you);
-        sound8.setOnClickListener(new View.OnClickListener(){
-
-            public void onClick(View v) {
-                if (mp6.isPlaying()){
-                    mp6.pause();
-                } else {mp6.start();}
-            }
-        });
     }
+
+    public void stop (int a){
+
+        if ( flag == 0 ){
+            currentPlaying.pause();
+            flag = 1;
+            if(a!=previousSong){
+                mp.start();
+                currentPlaying = mp;
+                flag = 0;
+                previousSong = a ;
+            }
+        }
+        else {
+            mp.start();
+            currentPlaying = mp;
+            flag = 0;
+            previousSong =  a ;
+        }
+    }
+
+
+    public void beats(View view){
+        a = view.getId();
+
+
+        if(a==R.id.sound1){
+            mp = MediaPlayer.create(this, R.raw.the_nights);
+            stop(a);
+        }
+        else if(a==R.id.sound2){
+            mp = MediaPlayer.create(this, R.raw.lily);
+            stop(a);
+        }
+        else if(a==R.id.sound3){
+            mp = MediaPlayer.create(this, R.raw.alone);
+            stop(a);
+        }
+        else if(a==R.id.sounnd4){
+            mp = MediaPlayer.create(this, R.raw.friends);
+            stop(a);
+        }
+        else if(a==R.id.sound5){
+            mp = MediaPlayer.create(this, R.raw.on_my_way);
+            stop(a);
+        }
+        else if(a==R.id.sound6){
+            mp = MediaPlayer.create(this, R.raw.safari);
+            stop(a);
+        }
+        else if(a==R.id.sound7){
+            mp = MediaPlayer.create(this, R.raw.senorita);
+            stop(a);
+        }
+        else if(a==R.id.sound8){
+            mp = MediaPlayer.create(this, R.raw.shape_of_you);
+            stop(a);
+        }
+        else{
+            Toast.makeText(this, "Something went wrong!" , Toast.LENGTH_SHORT ).show();
+        }
+
+    }
+
+
 }
